@@ -1,0 +1,820 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+    font-family: futurak;
+    src: url(../assets/fonts/futurak.ttf);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: hsl(0, 0%, 0%);
+  --red: hsl(358, 85%, 52%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+
+/* navbar started */
+.logo-image {
+  width: 165px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+}
+.nav-single-item {
+  cursor: pointer;
+}
+
+.franchise-btn {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.order-btn {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+/* nav-bar  */
+.about-us{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.arrow-icon {
+  color: var(--red);
+}
+
+.arrow-span {
+  padding: 5px 8px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.menu-icon{
+    color: var(--white);
+    font-size: 26px;
+}
+
+.menu-container{
+    display: none;
+}
+/* navbar ended */
+
+.carousel-image{
+    width: 100%;
+}
+
+
+/* Restaurants container started */
+.restaurant-heading{
+    text-align: center;
+    font-weight: 300;
+    font-size: 42px;
+    margin-top: 50px;
+}
+
+.restaurant-para{
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.702);
+    margin: 10px 0px;
+}
+
+.futurak-font-heading{
+    font-family: futurak;
+    font-size: 55px;
+}
+.brand-image{
+    background-color: var(--white);
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 260px;
+    height: 140px;
+}
+.brand-children{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.order-now-btn{
+    background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.702);
+  border: 1px solid hsla(0, 0%, 100%, 0.702);
+  padding: 10px 50px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.brands-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px;
+}
+/* Restaurants container ended */
+
+
+
+/* responsive media query */
+
+@media(max-width: 1000px){
+    .menu-container{
+        display: block;
+    }
+    .nav-items{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 0px 50px;
+    }
+}
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.location-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.location-text h3 {
+  color: red;
+  letter-spacing: 3px;
+}
+
+.location-text h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.location-text h1 span {
+  font-family: 'Times New Roman', serif;
+  color: white;
+}
+
+.location-text p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.location-text i {
+  margin-right: 8px;
+}
+
+.directions-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: black;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.directions-btn i {
+  margin-left: 10px;
+}
+
+.location-img img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsl(0, 0%, 7%);
+  color: hsl(0, 0%, 100%);
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: hsl(0, 0%, 7%);
+}
+
+.location-text {
+  max-width: 50%;
+}
+
+.location-text h3 {
+  color: hsl(1, 77%, 55%);
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+.location-text h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.location-text h1 span {
+  font-weight: bold;
+  color: white;
+  font-family: 'Georgia', serif;
+}
+
+.location-text p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: hsl(0, 0%, 73%);
+}
+
+.location-text i {
+  margin-right: 10px;
+  color: hsl(0, 0%, 73%);
+}
+
+.directions-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 1em;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 20%);
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.directions-btn span {
+  background-color: white;
+  color: red;
+  border-radius: 50%;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.directions-btn:hover {
+  background-color: hsl(0, 0%, 13%);
+}
+
+.location-img img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+}
+
+.express-section {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.express-section h1 {
+  font-size: 3em;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.express-section h1 span {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+}
+
+.express-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.express-card {
+  background-color: hsl(0, 0%, 7%);
+  width: 300px;
+  text-align: left;
+  color: white;
+}
+
+.express-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.express-card h4 {
+  color: hsl(1, 77%, 55%);
+  margin-top: 15px;
+  letter-spacing: 3px;
+}
+
+.express-card h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 8px 0;
+}
+
+.express-card h2 span {
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.express-card p {
+  color: hsl(0, 0%, 73%);
+  font-size: 0.95em;
+  margin: 10px 0;
+}
+
+.express-card i {
+  margin-right: 10px;
+  color: hsl(0, 0%, 53%);
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+}
+
+.express-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.express-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.express-card {
+  width: 300px;
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+  text-align: left;
+  position: relative;
+}
+
+.direction-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #777;
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.direction-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.direction-btn i {
+  margin-left: 10px;
+  color: red;
+}
+
+.express-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.express-card h4 {
+  color: hsl(1, 77%, 55%);
+  margin-top: 15px;
+  letter-spacing: 3px;
+}
+
+.express-card h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 8px 0;
+}
+
+.express-card h2 span {
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.express-card p {
+  color: hsl(0, 0%, 73%);
+  font-size: 0.95em;
+  margin: 10px 0;
+}
+
+.express-card i {
+  margin-right: 10px;
+  color: hsl(0, 0%, 53%);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+}
+
+.express-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.express-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.express-card {
+  width: 300px;
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+  text-align: left;
+  position: relative;
+}
+
+.direction-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: 1px solid hsl(0, 0%, 47%);
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.direction-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.direction-btn i {
+  margin-left: 10px;
+  color: red;
+}
+
+.express-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.express-card h4 {
+  color: hsl(1, 77%, 55%);
+  margin-top: 15px;
+  letter-spacing: 3px;
+}
+
+.express-card h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 8px 0;
+}
+
+.express-card h2 span {
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.express-card p {
+  color: hsl(0, 0%, 73%);
+  font-size: 0.95em;
+  margin: 10px 0;
+}
+
+.express-card i {
+  margin-right: 10px;
+  color: hsl(0, 0%, 53%);
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsl(0, 2%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.restaurant-img {
+  width: 600px;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px hsl(0, 0%, 27%);
+}
+
+.info {
+  max-width: 400px;
+  text-align: left;
+}
+
+.location {
+  color: red;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.brand {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: hsl(144, 100%, 33%);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: hsl(143, 100%, 27%);
+}
+
+
+
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.soon {
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.status {
+  color: red;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+
+
+
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Social Feed */
+.social-feed {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.social-feed h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feed-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.feed-images img {
+  width: 215px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  background-color: hsl(0, 0%, 7%);
+  padding: 40px 20px 20px;
+  color: hsl(0, 0%, 80%);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h4 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: hsl(0, 0%, 80%);
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: hsl(0, 0%, 53%);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons a img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.store-buttons img {
+  width: 160px;
+  margin: 10px 5px 0 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid hsl(0, 0%, 20%);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: hsl(0, 0%, 47%);
+}
+
+
+
+
+
